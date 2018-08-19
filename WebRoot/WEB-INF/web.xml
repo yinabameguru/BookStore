@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.springmodules.org/schema/cache/springmodules-cache.xsd http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>BookStore</display-name>
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <jsp-file>/WEB-INF/jsp/Login.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  <servlet-name>Main</servlet-name>
+  <jsp-file>/WEB-INF/jsp/Main.jsp</jsp-file>
+  </servlet>
+  <servlet>
+	<servlet-name>Register</servlet-name>
+	<jsp-file>/WEB-INF/jsp/Register.jsp</jsp-file>
+  </servlet>
+  <servlet>
+	<servlet-name>BookShow</servlet-name>
+	<jsp-file>/WEB-INF/jsp/BookShow.jsp</jsp-file>
+  </servlet>
+  <servlet>
+	<servlet-name>Cart</servlet-name>
+	<jsp-file>/WEB-INF/jsp/Cart.jsp</jsp-file>
+  </servlet>
+  <servlet>
+	<servlet-name>AddCartSuccess</servlet-name>
+	<jsp-file>/WEB-INF/jsp/AddCartSuccess.jsp</jsp-file>
+  </servlet>
+  <servlet>
+	<servlet-name>CreateOrderSuccess</servlet-name>
+	<jsp-file>/WEB-INF/jsp/CreateOrderSuccess.jsp</jsp-file>
+  </servlet>
+  <servlet>
+	<servlet-name>Orderinfo</servlet-name>
+	<jsp-file>/WEB-INF/jsp/Orderinfo.jsp</jsp-file>
+  </servlet>
+  
+  
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CodeServlet</servlet-name>
+    <servlet-class>com.jza_lbz.web.controller.CodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CancellationServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.CancellationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CategorBookServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.CategorBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ToBookShowServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.ToBookShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCartServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.AddCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.CartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderSubmitServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.OrderSubmitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderInfoServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.OrderInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderitemServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.jza_lbz.web.controller.OrderitemServlet</servlet-class>
+  </servlet>
+
+  
+
+
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>Main</servlet-name>
+  <url-pattern>/Main</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BookShow</servlet-name>
+  	<url-pattern>/BookShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Cart</servlet-name>
+  	<url-pattern>/Cart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CreateOrderSuccess</servlet-name>
+  	<url-pattern>/CreateOrderSuccess</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Orderinfo</servlet-name>
+  	<url-pattern>/Orderinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddCartSuccess</servlet-name>
+  	<url-pattern>/AddCartSuccess</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CodeServlet</servlet-name>
+    <url-pattern>/CodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/MainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CancellationServlet</servlet-name>
+    <url-pattern>/CancellationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategorBookServlet</servlet-name>
+    <url-pattern>/CategorBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToBookShowServlet</servlet-name>
+    <url-pattern>/ToBookShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCartServlet</servlet-name>
+    <url-pattern>/AddCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/CartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSubmitServlet</servlet-name>
+    <url-pattern>/OrderSubmitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderInfoServlet</servlet-name>
+    <url-pattern>/OrderInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderitemServlet</servlet-name>
+    <url-pattern>/OrderitemServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
